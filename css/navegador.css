@@ -116,7 +116,7 @@
 }
 
 @media(min-width: 1024px) {
-    .navegador__menu span{
+    .navegador__menu{
         display: none;
     }
 
@@ -129,6 +129,8 @@
         width: max-content;
         transition: all 600ms;
         z-index: 1000;
+        display: flex;
+        align-items: center;
     }
     
     .navegador__nav ul {
@@ -153,9 +155,9 @@
         text-transform: uppercase;
         line-height: 16px;
         font-weight: 400;
-        display: block;
         color: #cccccc;
-        padding: 12px 16px 12px 0;
+        padding: 0;
+        margin: 0 auto;
     }
     
     .navegador__nav ul li:first-child {
