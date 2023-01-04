@@ -10,21 +10,35 @@
     color: #fff;
 }
 
-#sidebar {
+.bx-x {
+    font-size: 30px;
+    color: #fff;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -200px;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     background: rgba(10, 10, 10, .65);
     box-shadow: 0 8px 32px rgb(2, 4, 24);
     border-right: 2px solid rgba(255, 255, 255, .09);
-    width: 200px;
+    min-width: 200px;
+    width: 0;
     height: 100vh;
     display: grid;
     grid-template-rows: 80px 365px;
     justify-items: center;
-    padding: 10px 0 0;
+    padding: 5% 0 0;
+    transition: all 0.3s;
+}
+
+.sidebar--show {
+    left: 0;
+    width: 200px;
 }
 
 .sidebar .logo {
