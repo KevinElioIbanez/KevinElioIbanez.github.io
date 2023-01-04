@@ -74,8 +74,9 @@
 
 .sideBar .sideBar__navBar {
     display: grid;
-    align-content: space-between;
-    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 18px;
+   /*  justify-content: flex-start; */
     /* padding-left: 10px; */
 }
 
