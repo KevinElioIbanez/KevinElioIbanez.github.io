@@ -1,6 +1,5 @@
 @import url(navegador.css);
-@import url(header.css);
-@import url(sobreMi.css);
+@import url(inicio.css);
 
 @font-face {
   font-family: "Fuente-Grande";
@@ -16,9 +15,23 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  background-color: #f9f9f9;
+/* .section {
+  padding: 4.5rem 0 2rem;
+} */
+
+.section h2 {
+  text-align: center;
+  color: white;
 }
 
+.section__height {
+  background-image: url(../public/img/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}

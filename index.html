@@ -1,74 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Kevin Ibañez - Portfolio</title>
 </head>
+
 <body>
 
-    <nav class="navegador">
-        <div class="navegador__logo">
-            <img src="public/img/logo.png" alt="Kevin-Ibañez">
+    <!-- <div class="conteiner-portfolio">
+        <div class="sidebar">
+
+            <div class="toggle">
+                <i class="bx bx-chevron-right"></i> 
+            </div>
+
+            <div class="logo">
+                <img src="public/img/voila_1672766832814.jpg" alt="kevin-ibañez">
+                <h3>Kevin Ibañez</h3>
+            </div>
+    
+            <nav>
+    
+                <div class="nav-title">
+                    Portfolio
+                </div>
+    
+                <ul>
+                    <li class="nav-item active">
+                        <i class='bx bxs-home'></i>
+                        <span>Inicio</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxs-user'></i>
+                        <span>Perfil</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
+                        <span>Skills</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bx bxs-dashboard"></i>
+                        <span>Portfolio</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxl-github'></i>
+                        <span>Github</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxl-linkedin-square'></i>
+                        <span>Linkedin</span>
+                    </li>
+                </ul>
+    
+                <hr>
+    
+                <div class="nav-title">
+                    Contacto
+                </div>
+    
+                <ul>
+                    <li class="nav-item">
+                        <i class='bx bxl-whatsapp'></i>
+                        <span>Whatsapp</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxs-envelope'></i>
+                        <span>Correo</span>
+                    </li>
+                </ul>
+    
+            </nav>
+    
         </div>
-        <div class="navegador__menu">
-            <span class="line1__bars-menu"></span>
-            <span class="line2__bars-menu"></span>
-            <span class="line3__bars-menu"></span>
+
+        <div class="inicio">
+            
         </div>
-        <div class="navegador__nav">
-            <ul>
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Sobre Mi</a>
-                </li>
-                <li>
-                    <a href="#">Skills</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
+
+        <div class="perfil">
+
         </div>
-    </nav>
-    <div class="inicio">
-        <header class="header">
-            <span>Bienvenidos</span>
-            <h1>Soy <span>Kevin Ibañez</span>, Desarrollador Web</h1>
-        </header>
+    </div> -->
+
+    <!-- --------------------------------------------------------------------------- -->
+
+    <div class="container-menu">
+        <i class='bx bx-menu' id="menu"></i>
     </div>
 
-    <section class="Sobre-mi">
-        <div class="conteiner-SobreMi">
-            <div class="SobreMi__img">
-                <img src="" alt="">
-            </div>
-            <div class="SobreMi__descripcion">
-                <span></span>
-                <h2>Hola, Soy Kevin Ibañez</h2>
-                <h3>Desarrollador Web</h3>
-                <p>Me considero una persona con una actitud
-                    positiva, perseverante y con iniciativa, capaz de
-                    trabajar en equipo y bajo presión administrando
-                    el tiempo de forma eficiente.
-                    Mi objetivo es adquirir un puesto con la intención
-                    de desarrollar mis aptitudes y extender mis
-                    conocimientos en el rubro IT
-                </p>
-            </div>
+    <div class="sidebar" id="sidebar">
+
+        <div class="toggle">
+            <i class="bx bx-chevron-right"></i> 
         </div>
-    </section>
+
+        <div class="logo">
+            <img src="public/img/voila_1672766832814.jpg" alt="kevin-ibañez">
+            <h3>Kevin Ibañez</h3>
+        </div>
+
+        <nav class="navbar">
+
+            <div class="nav-title">
+                Portfolio
+            </div>
+
+            <ul>
+                <li class="nav-item active">
+                    <a href="">
+                        <i class='bx bxs-home'></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class='bx bxs-user'></i>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class="bx bxs-dashboard"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class='bx bxl-github'></i>
+                        <span>Github</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class='bx bxl-linkedin-square'></i>
+                        <span>Linkedin</span>
+                    </a>
+                </li>
+            </ul>
+
+            <hr>
+
+            <div class="nav-title">
+                Contacto
+            </div>
+
+            <ul class="navbar__contact">
+                <li class="nav-item">
+                    <a href="">
+                        <i class='bx bxl-whatsapp'></i>
+                        <span>Whatsapp</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class='bx bxs-envelope'></i>
+                        <span>Correo</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <main>
+
+        <section class="container section section__height">
+            <h2>Inicio</h2>
+        </section>
+        <section class="container section section__height">
+            <h2>Perfil</h2>
+        </section>
+        <section class="container section section__height">
+            <h2>Skills</h2>
+        </section>
+
+    </main>
 
     <script src="js/script.js"></script>
+
 </body>
+
 </html>

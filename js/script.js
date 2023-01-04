@@ -13,3 +13,18 @@ function animacionMenu(){
     linea3.classList.toggle("activeline3__bars-menu");
     menu__nav.classList.toggle("active__nav")
 }
+
+/* Carrusel del Header */
+
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+});
