@@ -1,199 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link Box-icons -->
+    <!-- Link box-icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link Css -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>Kevin Ibañez - Portfolio</title>
-</head>
 
+</head>
 <body>
 
-    <!-- <div class="conteiner-portfolio">
-        <div class="sidebar">
+    <div class="navbar-container">
+        
+        <div class="conteiner-bars">
+            <i class='bx bx-menu' id="menu"></i>
+        </div>
 
-            <div class="toggle">
-                <i class="bx bx-chevron-right"></i> 
-            </div>
+        <div class="sideBar" id="sideBar">
 
-            <div class="logo">
-                <img src="public/img/voila_1672766832814.jpg" alt="kevin-ibañez">
+            <div class="navBar__logo">
+                <img src="public/img/perfil.jpg" alt="kevin-ibañez">
                 <h3>Kevin Ibañez</h3>
             </div>
-    
-            <nav>
-    
-                <div class="nav-title">
+
+            <nav class="sideBar__navBar">
+
+                <div class="navBar-title">
                     Portfolio
                 </div>
-    
-                <ul>
+
+                <ul class="navBar__nav">
                     <li class="nav-item active">
-                        <i class='bx bxs-home'></i>
-                        <span>Inicio</span>
+                        <a href="">
+                            <i class='bx bxs-home'></i>
+                            <span>Inicio</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class='bx bxs-user'></i>
-                        <span>Perfil</span>
+                        <a href="">
+                            <i class='bx bxs-user'></i>
+                            <span>Perfil</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class='bx bxs-bar-chart-alt-2'></i>
-                        <span>Skills</span>
+                        <a href="">
+                            <i class='bx bxs-bar-chart-alt-2'></i>
+                            <span>Skills</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class="bx bxs-dashboard"></i>
-                        <span>Portfolio</span>
+                        <a href="">
+                            <i class="bx bxs-dashboard"></i>
+                            <span>Portfolio</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class='bx bxl-github'></i>
-                        <span>Github</span>
+                        <a href="">
+                            <i class='bx bxl-github'></i>
+                            <span>Github</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class='bx bxl-linkedin-square'></i>
-                        <span>Linkedin</span>
+                        <a href="">
+                            <i class='bx bxl-linkedin-square'></i>
+                            <span>Linkedin</span>
+                        </a>
                     </li>
                 </ul>
-    
+
                 <hr>
-    
-                <div class="nav-title">
+
+                <div class="navBar-title">
                     Contacto
                 </div>
     
-                <ul>
+                <ul class="navBar__contact">
                     <li class="nav-item">
-                        <i class='bx bxl-whatsapp'></i>
-                        <span>Whatsapp</span>
+                        <a href="">
+                            <i class='bx bxl-whatsapp'></i>
+                            <span>Whatsapp</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class='bx bxs-envelope'></i>
-                        <span>Correo</span>
+                        <a href="">
+                            <i class='bx bxs-envelope'></i>
+                            <span>Correo</span>
+                        </a>
                     </li>
                 </ul>
-    
+
             </nav>
-    
-        </div>
 
-        <div class="inicio">
-            
-        </div>
-
-        <div class="perfil">
-
-        </div>
-    </div> -->
-
-    <!-- --------------------------------------------------------------------------- -->
-
-    <div class="container-menu">
-        <i class='bx bx-menu' id="menu"></i>
-    </div>
-
-    <div class="sidebar" id="sidebar">
-
-        <div class="toggle">
-            <i class="bx bx-chevron-right"></i> 
-        </div>
-
-        <div class="logo">
-            <img src="public/img/voila_1672766832814.jpg" alt="kevin-ibañez">
-            <h3>Kevin Ibañez</h3>
-        </div>
-
-        <nav class="navbar">
-
-            <div class="nav-title">
-                Portfolio
+            <div class="sideBar__toggle">
+                <i class="bx bx-chevron-right"></i> 
             </div>
 
-            <ul>
-                <li class="nav-item active">
-                    <a href="">
-                        <i class='bx bxs-home'></i>
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="">
-                        <i class='bx bxs-user'></i>
-                        <span>Perfil</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="">
-                        <i class='bx bxs-bar-chart-alt-2'></i>
-                        <span>Skills</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="">
-                        <i class="bx bxs-dashboard"></i>
-                        <span>Portfolio</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="">
-                        <i class='bx bxl-github'></i>
-                        <span>Github</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="">
-                        <i class='bx bxl-linkedin-square'></i>
-                        <span>Linkedin</span>
-                    </a>
-                </li>
-            </ul>
+        </div>
 
-            <hr>
-
-            <div class="nav-title">
-                Contacto
-            </div>
-
-            <ul class="navbar__contact">
-                <li class="nav-item">
-                    <a href="">
-                        <i class='bx bxl-whatsapp'></i>
-                        <span>Whatsapp</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="">
-                        <i class='bx bxs-envelope'></i>
-                        <span>Correo</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
     </div>
-
-    <main>
-
-        <section class="container section section__height">
-            <h2>Inicio</h2>
-        </section>
-        <section class="container section section__height">
-            <h2>Perfil</h2>
-        </section>
-        <section class="container section section__height">
-            <h2>Skills</h2>
-        </section>
-
-    </main>
 
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

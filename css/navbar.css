@@ -1,0 +1,158 @@
+.navbar-container {
+    width: fit-content;
+    height: 100%;
+}
+
+/* Boton-menu */
+
+.conteiner-bars {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 14px;
+    color: #fff;
+}
+
+.bx-x {
+    font-size: 30px;
+    color: #fff;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+/* SideBar */
+
+.sideBar {
+    width: 0;
+    height: 100vh;
+    padding: 5% 0;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(10, 10, 10, .65);
+    box-shadow: 0 8px 32px rgb(2, 4, 24);
+    border-right: 2px solid rgba(255, 255, 255, .09);
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: all .3s;
+}
+
+.sideBar--show {
+    left: 0;
+    width: 200px;
+}
+
+/* SideBar logo */
+
+.sideBar .navBar__logo  {
+    display: grid;
+    place-content: center;
+    row-gap: 10px;
+}
+
+.sideBar .navBar__logo img {
+    place-self: center;
+    width: 56px;
+    border: 1px solid rgb(209, 210, 223);
+    border-radius: 50%;
+}
+
+.sideBar .navBar__logo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-variant: small-caps;
+    pointer-events: none;
+    /* scale: 0;
+       opacity: 0;
+    display: none; */
+}
+
+/* Sidebar navBar */
+
+.sideBar .sideBar__navBar {
+    display: grid;
+    align-content: space-between;
+    justify-content: flex-start;
+    /* padding-left: 10px; */
+}
+
+.sideBar__navBar .navBar-title {
+    display: none;
+}
+
+.sideBar__navBar .navBar__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sideBar__navBar .nav-item {
+    display: grid;
+    justify-items: center;
+    height: 40px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.sideBar__navBar .navBar__nav .nav-item {
+    justify-items: flex-start;
+}
+
+.sideBar__navBar .nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.sideBar__navBar .nav-item a i {
+    display: flex;
+    font-size: 18px;
+    margin: 0 15px;
+    color: #fff;
+}
+
+.sideBar__navBar .nav-item a span {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sideBar__navBar hr {
+    display: none;
+}
+
+/* Sidebar navBar__contact */
+
+.sideBar .navBar__contact {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar__contact .nav-item {
+    margin: 0;
+}
+
+/* .navBar__contact .nav-item a {
+    display: flex;
+    justify-items: center;
+} */
+
+.navBar__contact .nav-item a i {
+    font-size: 26px;
+}
+
+.navBar__contact .nav-item a span {
+    display: none;
+}
+
+/* Sidebar Toggle */
+
+.sideBar .sideBar__toggle {
+    display: none;
+}
+

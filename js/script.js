@@ -1,11 +1,7 @@
-/* Menu bars */
+const menu = document.getElementById("menu");
+const sidebar = document.getElementById("sideBar");
 
-const bars = document.getElementById("menu");
-const menu = document.getElementById("sidebar");
-
-bars.addEventListener("click", () => {
-  menu.classList.add("sidebar--show")
-  bars.classList.remove("bx-menu")
-  bars.classList.add("bx-x")
+menu.addEventListener("click", () => {
+    menu.classList.toggle("bx-x");
+    sidebar.classList.toggle("sideBar--show");
 })
-
