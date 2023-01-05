@@ -75,9 +75,7 @@
 .sideBar .sideBar__navBar {
     display: grid;
     align-content: flex-start;
-    row-gap: 18px;
-   /*  justify-content: flex-start; */
-    /* padding-left: 10px; */
+    row-gap: 20px;
 }
 
 .sideBar__navBar .navBar-title {
@@ -89,14 +87,25 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 0 12px;
 }
 
 .sideBar__navBar .nav-item {
+    cursor: pointer;
     display: grid;
     justify-items: center;
     height: 40px;
     width: 100%;
     margin: 5px 0;
+    border-radius: 4px;
+}
+
+.sideBar__navBar .nav-item.active {
+    background-color: #ff328e;
+}
+
+.sideBar__navBar .nav-item:hover {
+    background: rgba(255, 255, 255, .1);
 }
 
 .sideBar__navBar .navBar__nav .nav-item {
