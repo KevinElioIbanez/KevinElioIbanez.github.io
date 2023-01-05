@@ -72,11 +72,7 @@
 .sideBar .sideBar__navBar {
     display: grid;
     align-content: flex-start;
-    row-gap: 20px;
-}
-
-.sideBar__navBar .navBar-title {
-    display: none;
+    padding: 0 12px;
 }
 
 .sideBar__navBar .navBar__nav {
@@ -84,7 +80,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 12px;
+    
 }
 
 .sideBar__navBar .nav-item {
@@ -105,7 +101,7 @@
     background: rgba(255, 255, 255, .1);
 }
 
-.sideBar__navBar .navBar__nav .nav-item {
+.sideBar__navBar .nav-item {
     justify-items: flex-start;
 }
 
@@ -134,23 +130,6 @@
 
 /* Sidebar navBar__contact */
 
-.sideBar .navBar__contact {
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navBar__contact .nav-item {
-    margin: 5px 0;
-}
-
-.navBar__contact .nav-item a i {
-    font-size: 26px;
-}
-
-.navBar__contact .nav-item a span {
-    display: none;
-}
 
 /* Sidebar Toggle */
 
@@ -311,7 +290,7 @@
         height: 2px;
         background: rgba(255, 255, 255, .1);
         border-radius: 3px;
-        margin: 20px 0;
+        margin: 8px 0;
     }
 
     /* Sidebar navBar__contact */
