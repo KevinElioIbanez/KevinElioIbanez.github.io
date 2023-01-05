@@ -1,4 +1,7 @@
 @import url(navbar.css);
+@import url(inicio.css);
+@import url(perfil.css);
+@import url(skills.css);
 
 * {
     margin: 0;
@@ -11,8 +14,8 @@
 
 body {
     min-height: 100vh;
-    background-image: url(../public/img/fondo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.main-container {
+    height: 100%;
 }
