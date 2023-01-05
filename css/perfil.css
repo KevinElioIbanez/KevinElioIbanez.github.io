@@ -1,13 +1,12 @@
 .perfil-container {
     width: 100%;
     height: 100vh;
-    background-color: red;
+    background: linear-gradient(0deg, #EDF2E9, #DFE8E1, #AEC5C1, #92ACAE, #688890, #426575, #24465D, #122D48, #0B1D38, #0D122B);
 }
 
 .section-perfil {
     width: calc(100% - 120px);
     height: 100%;
-    background-color: blue;
     margin-left: 120px;
 }
 

@@ -14,7 +14,7 @@ const navItems = document.querySelectorAll("nav .nav-item")
 const toggle = document.getElementById("toggle");
 
 toggle.addEventListener("click", () => {
-    if(sidebar.className == "sideBar") {
+    if (sidebar.className == "sideBar") {
         sidebar.classList.add("open")
     }
     else {
@@ -24,7 +24,7 @@ toggle.addEventListener("click", () => {
 
 navItems.forEach(item => {
     item.addEventListener("click", () => {
-        
+
         navItems.forEach(navItems => {
             navItems.classList.remove("active")
         })
@@ -33,3 +33,26 @@ navItems.forEach(item => {
 
     })
 })
+
+/* Scrolls Sections */
+
+const enlaces = document.querySelectorAll('a');
+
+enlaces.forEach(enlace => {
+
+  enlace.addEventListener('click', function(e) {
+
+    e.preventDefault();
+    const href = this.getAttribute('href');
+
+    document.querySelector(href).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+      selector: enlace
+    });
+
+  });
+
+});
+

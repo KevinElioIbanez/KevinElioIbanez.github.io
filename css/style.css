@@ -18,4 +18,8 @@ body {
 
 .main-container {
     height: 100%;
+    background-image: url(../public/img/fondo-skills.jpg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: repeat-y;
 }

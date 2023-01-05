@@ -1,12 +1,16 @@
 /* Boton-menu */
 
-.conteiner-bars {
+.conteiner-bars { 
     position: fixed;
     top: 0;
     right: 0;
     font-size: 30px;
     padding: 14px;
     color: #fff;
+}
+
+.conteiner-bars>i {
+    cursor: pointer;
 }
 
 .bx-x {
@@ -101,6 +105,8 @@
 }
 
 .sideBar__navBar .nav-item a {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -324,6 +330,7 @@
     .sideBar .sideBar__toggle i {
         transition: .4s linear;
     }
+
     .sideBar.open .sideBar__toggle i {
         transform: rotateY(180deg);
     }

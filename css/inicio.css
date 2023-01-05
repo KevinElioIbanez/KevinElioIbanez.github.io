@@ -9,4 +9,5 @@
 
 .section-inicio {
     width: calc(100% - 120px);
+    height: 100%;
 }
