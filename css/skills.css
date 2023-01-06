@@ -15,4 +15,5 @@
     place-items: center;
     text-align: center;
     color: #fff;
+    transition: .4s all;
 }

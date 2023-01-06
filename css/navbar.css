@@ -37,9 +37,9 @@
     position: fixed;
     top: 0;
     left: -200px;
-    transition: .3s;
     z-index: 100000;
     font-family: 'Open Sans', sans-serif;
+    transition: .4s all;
 }
 
 .sideBar--show {
@@ -208,7 +208,7 @@
         opacity: 1;
         display: block;
         transition: .4s;
-        transition-delay: .2s;
+        transition-delay: 6s;
     }
 
     /* SideBar__navBar */
@@ -230,7 +230,7 @@
         flex-direction: column;
         align-content: flex-start;
         justify-items: center;
-        transition: .3s;
+        /* transition: .3s; */
     }
 
 
@@ -330,9 +330,9 @@
         background: linear-gradient(90deg, transparent 50%, rgba(10,10,10,.65) 50%);
     }
 
-    .sideBar .sideBar__toggle i {
+    /* .sideBar .sideBar__toggle i {
         transition: .4s linear;
-    }
+    } */
 
     .sideBar.open .sideBar__toggle i {
         transform: rotateY(180deg);

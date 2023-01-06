@@ -13,6 +13,7 @@
     padding: 20px;
     display: grid;
     place-items: center;
+    transition: .4s all;
 }
 
 .section-inicio .profile-container {
@@ -102,7 +103,7 @@
   
 .profile-container .profile__img {
     animation: move 3s linear infinite;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 

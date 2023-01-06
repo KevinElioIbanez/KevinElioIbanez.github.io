@@ -17,6 +17,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
+    transition: all .4s ease-in-out;
 }
 
 body {
