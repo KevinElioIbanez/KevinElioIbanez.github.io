@@ -39,6 +39,7 @@
     left: -200px;
     transition: .3s;
     z-index: 100000;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .sideBar--show {

@@ -12,7 +12,6 @@ menu.addEventListener("click", () => {
 
 /* Menu Escritorio */
 
-const navItems = document.querySelectorAll("nav .nav-item")
 const toggle = document.getElementById("toggle");
 const sections = document.querySelectorAll("section");
 
@@ -37,41 +36,36 @@ toggle.addEventListener("click", () => {
 
 })
 
-navItems.forEach(item => {
-    item.addEventListener("click", () => {
-
-        navItems.forEach(navItems => {
-            navItems.classList.remove("active")
-        })
-
-        item.classList.add("active")
-
-    })
-})
 
 /* Scrolls Sections */
 
+const navItems = document.querySelectorAll('nav .nav-item');
 const enlaces = document.querySelectorAll('a');
 
-enlaces.forEach(enlace => {
-
-  enlace.addEventListener('click', function(e) {
-
-    e.preventDefault();
-    const href = this.getAttribute('href');
-
-    document.querySelector(href).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-      selector: enlace
-    });
-
+function handleClick(e) {
+  e.preventDefault();
+  const href = this.getAttribute('href');
+  const seccion = document.querySelector(href);
+  seccion.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    inline: 'nearest'
   });
+}
 
+navItems.forEach(item => {
+  item.addEventListener('click', function() {
+    navItems.forEach(navItem => navItem.classList.remove('active'));
+    this.classList.add('active');
+  });
 });
 
+enlaces.forEach(enlace => enlace.addEventListener('click', handleClick));
+
+
 /* Efecto de aparicion de elementos */
+
+const hiddenElement = document.querySelectorAll(".hidden")
 
 const sectionShow = new IntersectionObserver(vista => {
     vista.forEach(item => {
@@ -84,6 +78,5 @@ const sectionShow = new IntersectionObserver(vista => {
     })
 })
 
-const hiddenElement = document.querySelectorAll(".hidden")
 
 hiddenElement.forEach((e) => sectionShow.observe(e))

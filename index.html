@@ -34,19 +34,19 @@
             <nav class="sideBar__navBar">
 
                 <ul class="navBar__nav">
-                    <li class="nav-item active">
-                        <a href="#incio" class="smooth-scroll">
+                    <li class="nav-item active"> <!-- ACTIVE -->
+                        <a href="#incio">
                             <i class='bx bxs-home'></i>
                             <span>Inicio</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#perfil" class="smooth-scroll">
+                        <a href="#perfil">
                             <i class='bx bxs-user'></i>
                             <span>Perfil</span>
                         </a>
                     </li>
-                    <li class="nav-item" class="smooth-scroll">
+                    <li class="nav-item">
                         <a href="#skills">
                             <i class='bx bxs-bar-chart-alt-2'></i>
                             <span>Skills</span>
@@ -101,16 +101,15 @@
 
     <main class="main-container">
         <div class="inicio-container">
-            <section class="section-inicio section hidden" id="incio">
-                <!-- Se codea a partir de aca abajo -->
-                <div class="profile-container">
+            <section class="section-inicio section" id="incio">
+                <div class="profile-container hidden">
                     <div class="profile__img">
                         <img src="public/img/perfil-foto.jpg" alt="kevin-ibañez">
                     </div>
                     <div class="profile__detail">
                         <div class="name">
                             <h1>Kevin Ibañez</h1>
-                            <h2>Estudiante de programación</h2>
+                            <h2>Estudiante de programación<br> Front-End Developer</h2>
                         </div>
                         <div class="redes">
                             <a href="#"><i class='bx bxl-linkedin'></i></a>
@@ -123,18 +122,76 @@
             </section>
         </div>
         <div class="perfil-container">
-            <section class="section-perfil section hidden" id="perfil">
-                <h3>Sobre mi</h3>
+            <section class="section-perfil section" id="perfil">
+                <div class="about-container hidden">
+                    <div class="about__mi">
+                        <h3>Sobre mi</h3>
+                        <p>
+                            <span>Hola, soy Kevin Ibañez.</span> Me considero una persona con una actitud
+                            positiva, perseverante y con iniciativa, capaz de
+                            trabajar en equipo y bajo presión administrando
+                            el tiempo de forma eficiente.
+                            Mi objetivo es adquirir un puesto con la intención
+                            de desarrollar mis aptitudes y extender mis
+                            conocimientos en el rubro IT.                    
+                        </p>
+                    </div>
+                    <div class="about__details">
+                        <!-- Datos personales -->
+                        <div class="datos-personales">
+                            <h4>Datos Personales</h4>
+                            <ul>
+                                <li>
+                                    <strong><i class='bx bxs-id-card'></i></strong><span>38.169.226</span>
+                                </li>
+                                <li>
+                                    <strong><i class='bx bx-phone'></i></strong><span>+54 11 3591-0548</span>
+                                </li>
+                                <li>
+                                    <strong><i class='bx bxs-calendar'></i></strong><span>22/12/1993</span>
+                                </li>
+                                <li>
+                                    <strong><i class='bx bxs-map'></i></strong><span>Gobernador Costa, Fcio. Varela,Buenos Aires</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Datos intereses -->
+                        <div class="datos-intereses">
+                            <h4>Intereses</h4>
+                            <ul>
+                                <li>
+                                    <strong><i class='bx bxs-game'></i></strong>
+                                    <span>Juegos</span>
+                                </li>
+                                <li>
+                                    <strong>
+                                    <i class='bx bx-football'></i>
+                                    </strong>
+                                    <span>Futbol</span>
+                                </li>
+                                <li>
+                                    <strong>
+                                        <i class='bx bx-headphone'></i>
+                                    </strong>
+                                    <span>Musica</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button>
+                        <span>Descargar CV</span><i class='bx bxs-download'></i>
+                    </button>
+                </div>
             </section>
         </div>
         <div class="skills-container">
-            <section class="section-skills section hidden" id="skills">
-                <h3>Skills</h3>
+            <section class="section-skills section" id="skills">
+                <h3 class="hidden">Skills</h3>
             </section>
         </div>
         <div class="portfolio-container">
-            <section class="section-portfolio section hidden" id="portfolio">
-                <h3>Portfolio</h3>
+            <section class="section-portfolio section" id="portfolio">
+                <h3 class="hidden">Portfolio</h3>
             </section>
         </div>
     </main>

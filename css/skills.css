@@ -1,6 +1,9 @@
 .skills-container {
     width: 100%;
     height: 100vh;
+    background-image: url(../public/img/fondo-skills.jpg);
+    background-size: cover;
+    background-position: left;
 }
 
 .section-skills {
@@ -11,4 +14,5 @@
     place-content: center;
     place-items: center;
     text-align: center;
+    color: #fff;
 }

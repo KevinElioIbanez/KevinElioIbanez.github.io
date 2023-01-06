@@ -4,6 +4,7 @@
     background-image: url(../public/img/fondo.png);
     background-size: cover;
     background-position: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .section-inicio {
@@ -12,7 +13,6 @@
     padding: 20px;
     display: grid;
     place-items: center;
-    scale: 0;
 }
 
 .section-inicio .profile-container {
