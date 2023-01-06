@@ -27,14 +27,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 
 .profile-container .profile__img {
     position: absolute;
     left: 50%;
-    top: 20%;
-    /* transform: translateX(-50%); */
-    transform: translate(-50%, -25%);
+    top: 0%;
+    /* transform: translate(-50%, -25%); */
     width: 150px;
     height: 150px;
     background-color: #fff;
@@ -133,9 +133,9 @@
 
 @media (min-width: 1024px) {
 
-    .profile-container .profile__img {
+    /* .profile-container .profile__img {
         top: 22%;
-    }
+    } */
 
     /* .profile-container .profile__img {
         transform: translate(-50%, -50%);
