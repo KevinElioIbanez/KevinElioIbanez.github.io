@@ -122,10 +122,6 @@
         margin: 0;
     }
 
-    .section-inicio--move {
-        width: calc(100% - 120px);
-    }
-
     .section-inicio .profile-container {
         margin: 0;
     }

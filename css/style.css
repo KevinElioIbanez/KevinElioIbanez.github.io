@@ -28,7 +28,6 @@ body {
 
 .section {
     border: 2px solid red;
-    width: calc(100% - 120px);
 }
 
 .hidden {
