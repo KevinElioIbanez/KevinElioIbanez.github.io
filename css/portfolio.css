@@ -14,3 +14,11 @@
     color: #fff;
     transition: .4s all;
 }
+
+@media(min-width: 768px) {
+    .section-portfolio {
+        
+        width: calc(100% - 120px);
+
+    }
+}

@@ -8,7 +8,6 @@
     height: 100%;
     color: #fff;
     padding: 0 20px;
-    outline: 2px solid yellow;
     display: flex;
     align-items: center;
     transition: .4s all;
@@ -16,7 +15,6 @@
 
 .section-perfil .about-container {
     width: 100%;
-    outline: 2px solid yellow;
 }
 
 .about-container .about__mi {
@@ -117,13 +115,10 @@
 
 @media (min-width: 768px) {
 
-    
-
     .section-perfil {
         width: unset;
         width: calc(100% - 120px);
-        /* padding: 0; */
-        margin: 0;
+        
     }
 
     .section-perfil .about-container .about__mi h3 {
@@ -157,6 +152,10 @@
 
     .section-perfil .about-container .about__details div ul li {
         margin: 12px 0;
+    }
+
+    .about-container .about__details .datos-intereses h4 {
+        margin-top: 0;
     }
 
 }

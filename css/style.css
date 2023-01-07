@@ -36,6 +36,20 @@ body {
     justify-content: flex-end;
 }
 
+.section {
+
+    padding: 0 40px;
+    
+}
+
+@media (min-width: 768px) {
+
+    .section--move {
+        width: calc(100% - 360px);
+    }
+
+}
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -51,10 +65,27 @@ body {
     transform: translateY(0%);
 }
 
-@media (min-width: 768px) {
 
-    .section--move {
-        width: calc(100% - 360px);
-    }
+.titulo {
+    font-size: 32px !important;
+}
 
+.parrafo {
+    font-size: 16px !important;
+}
+
+.detalles {
+    font-size: 16px !important;
+}
+
+.intereses {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    place-content: center !important;
+}
+
+.interes {
+    margin: 0 auto 5px !important;
+    padding: 6px 8px !important;
+    width: 60% !important;
 }
