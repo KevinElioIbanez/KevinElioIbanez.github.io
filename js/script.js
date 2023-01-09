@@ -35,14 +35,6 @@ toggle.addEventListener("click", () => {
         sidebar.classList.remove("open")
     }
 
-    /* sidebar.addEventListener("resize", () => {
-
-        sectionProfile.addEventListener("click", () => {
-            alert("ASDASDSAD")
-        })
-
-    }) */
-
 })
 
 

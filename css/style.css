@@ -36,13 +36,17 @@ body {
     justify-content: flex-end;
 }
 
-.section {
+/* .section {
 
     padding: 0 40px;
     
-}
+} */
 
 @media (min-width: 768px) {
+
+    .section {
+        padding: 0 40px;
+    }
 
     .section--move {
         width: calc(100% - 360px);
@@ -68,14 +72,18 @@ body {
 
 .titulo {
     font-size: 32px !important;
+    margin-top: 10px !important;
+    margin-bottom: 12px !important;
 }
 
 .parrafo {
     font-size: 16px !important;
+    margin-bottom: 12px !important;
 }
 
 .detalles {
     font-size: 16px !important;
+    margin-bottom: 20px !important;
 }
 
 .intereses {
