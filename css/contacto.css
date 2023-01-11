@@ -1,0 +1,24 @@
+.contacto-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.section-contacto {
+    /* width: calc(100% - 120px); */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: .4s all;
+}
+
+@media(min-width: 768px) {
+    .section-contacto {
+        
+        width: calc(100% - 120px);
+
+    }
+}

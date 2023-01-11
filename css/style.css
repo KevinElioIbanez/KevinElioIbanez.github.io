@@ -4,6 +4,7 @@
 @import url(skills.css);
 @import url(portfolio.css);
 @import url(curriculum.css);
+@import url(contacto.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
@@ -32,7 +33,7 @@ body {
     background: linear-gradient(to left, #000000, #1e2326);
 }
 
-.inicio-container, .perfil-container, .skills-container, .portfolio-container, .curriculum-container {
+.inicio-container, .perfil-container, .skills-container, .portfolio-container, .curriculum-container, .contacto-container {
     display: flex;
     justify-content: flex-end;
 }
