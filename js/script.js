@@ -66,7 +66,9 @@ enlaces.forEach(enlace => enlace.addEventListener('click', handleClick));
 
 /* Efecto de aparicion de elementos */
 
-const hiddenElement = document.querySelectorAll(".hidden")
+const hiddenElement = document.querySelectorAll(".hidden");
+const hiddenLateralRight = document.querySelectorAll(".hiddenLateralRight");
+const hiddenLateralLeft = document.querySelectorAll(".hiddenLateralLeft");
 
 const sectionShow = new IntersectionObserver(vista => {
     vista.forEach(item => {
@@ -79,8 +81,32 @@ const sectionShow = new IntersectionObserver(vista => {
     })
 })
 
+const sectionLeft = new IntersectionObserver(vista => {
+    vista.forEach(item => {
+        console.log(item);
+        if (item.isIntersecting) {
+            item.target.classList.add("show")
+        } else {
+            item.target.classList.remove("show")
+        }
+    })
+})
+
+const sectionRight = new IntersectionObserver(vista => {
+    vista.forEach(item => {
+        console.log(item);
+        if (item.isIntersecting) {
+            item.target.classList.add("show")
+        } else {
+            item.target.classList.remove("show")
+        }
+    })
+})
+
 
 hiddenElement.forEach((e) => sectionShow.observe(e))
+hiddenLateralLeft.forEach((e) => sectionLeft.observe(e))
+hiddenLateralRight.forEach((e) => sectionRight.observe(e))
 
 /* Cambio de ancho cuando el sidebar se agranda */
 

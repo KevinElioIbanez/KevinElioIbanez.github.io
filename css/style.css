@@ -3,6 +3,7 @@
 @import url(perfil.css);
 @import url(skills.css);
 @import url(portfolio.css);
+@import url(curriculum.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
@@ -31,16 +32,16 @@ body {
     background: linear-gradient(to left, #000000, #1e2326);
 }
 
-.inicio-container, .perfil-container, .skills-container, .portfolio-container {
+.inicio-container, .perfil-container, .skills-container, .portfolio-container, .curriculum-container {
     display: flex;
     justify-content: flex-end;
 }
 
-/* .section {
+.section {
 
-    padding: 0 40px;
+    padding: 0 20px;
     
-} */
+}
 
 @media (min-width: 768px) {
 
@@ -58,16 +59,33 @@ body {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(-100%);
-    transition: all .5s linear;
+    transition: all .8s linear;
     scale: 0;
+}
+
+.hiddenLateralRight {
+    overflow: hidden;
+    transform: translateX(400%);
+    transition: all 1s linear;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.hiddenLateralLeft {
+    transform: translateX(-100%);
+    transition: all 1s linear;
+    opacity: 0;
+    filter: blur(5px);
 }
 
 .show {
     scale: 1;
     opacity: 1;
-    filter: unset;
+    filter: blur(0);
     transform: translateY(0%);
 }
+
+
 
 
 .titulo {

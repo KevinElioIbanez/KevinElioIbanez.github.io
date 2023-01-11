@@ -1,21 +1,94 @@
 .skills-container {
     width: 100%;
     height: 100vh;
-    background-image: url(../public/img/fondo-skills.jpg);
-    background-size: cover;
-    background-position: left;
+    background-color: #1e2326;
 }
 
 .section-skills {
     width: 100%;
     height: 100%;
-    display: grid;
-    place-content: center;
-    place-items: center;
-    text-align: center;
     color: #fff;
+    display: flex;
+    justify-content: center;
     transition: .4s all;
 }
+
+.section-skills .skills__container {
+    align-self: center;
+}
+
+.section-skills h3 {
+    font-family: var(--titulo);
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-skills .skills__tec {
+    transition-delay: 200ms;
+}
+
+.section-skills .skills__tec, .section-skills .skills__soft {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.section-skills .skills__tec .programing-container ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.section-skills .skills__tec .programing-container ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: black;
+    user-select: none;
+}
+
+.section-skills .skills__tec .programing-container ul li i {
+    font-size: 90px;
+}
+
+.section-skills .skills__tec .programing-container ul li:hover i {
+    color: #ff328e;
+}
+
+.section-skills .skills__tec .programing-container ul li span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-skills .skills__soft {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-delay: 400ms;
+}
+
+
+.section-skills .skills__soft ul li{
+    list-style: circle;
+    color: #ff328e;  
+    margin: 5px 0;
+}
+
+.section-skills .skills__soft ul li span {
+    color: #fff;
+}
+
+
+
+
 
 @media(min-width: 768px) {
     .section-skills {
@@ -23,4 +96,36 @@
         width: calc(100% - 120px);
 
     }
+
+    .section-skills h3 {
+        margin-top: 0;
+        font-size: 42px;
+    }
+
+    .section-skills .skills__tec .programing-container ul {
+        gap: 15px 15px    ;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .section-skills .skills__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-skills h3 {
+        font-size: 48px;
+    }
+
+    .section-skills .skills__soft {
+        margin-top: 0;
+    }
+
+    .section-skills .skills__soft .soft-container {
+        display: grid;
+        place-content: center;
+    }
+    
 }
