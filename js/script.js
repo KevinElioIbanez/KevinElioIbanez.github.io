@@ -41,7 +41,7 @@ toggle.addEventListener("click", () => {
 /* Scrolls Sections */
 
 const navItems = document.querySelectorAll('nav .nav-item');
-const enlaces = document.querySelectorAll('a');
+const enlaces = document.querySelectorAll('.navBar__nav .nav-item a');
 
 function handleClick(e) {
     e.preventDefault();
@@ -105,7 +105,7 @@ const aboutMi = document.querySelector(".about__mi h3"),
 
 const observer = new ResizeObserver(() => {
 
-    if (sidebar.offsetWidth <= 360 && sidebar.offsetWidth > 120 && window.innerWidth >= 768 && window.innerWidth < 900 || window.innerWidth >= 1024) {
+    if (sidebar.offsetWidth <= 360 && sidebar.offsetWidth > 120 && window.innerWidth >= 768 && window.innerWidth < 900) {
 
         aboutMi.classList.add("titulo")
         aboutMiP.classList.add("parrafo")
@@ -116,7 +116,6 @@ const observer = new ResizeObserver(() => {
         aboutMiLi.forEach(li => {
             li.classList.add("interes")
         })
-        portfolioAltura.classList.add("portfolio-altura")
 
     } else {
 
@@ -129,11 +128,18 @@ const observer = new ResizeObserver(() => {
         aboutMiLi.forEach(li => {
             li.classList.remove("interes")
         })
-        portfolioAltura.classList.remove("portfolio-altura")
 
     }
 
-    /* if() */
+    if (sidebar.offsetWidth <= 360 && sidebar.offsetWidth > 120 && window.innerWidth >= 768 && window.innerWidth < 900 || window.innerWidth >= 1024) {
+
+        portfolioAltura.classList.add("portfolio-altura")
+
+    } else {
+
+        portfolioAltura.classList.remove("portfolio-altura")
+
+    }
 
 });
 
