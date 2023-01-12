@@ -1,10 +1,12 @@
 .contacto-container {
     width: 100%;
     height: 100vh;
+    background-image: url(../public/img/fondo-contacto.jpg);
+    background-size: cover;
+    background-position: left;
 }
 
 .section-contacto {
-    /* width: calc(100% - 120px); */
     width: 100%;
     height: 100%;
     display: grid;
@@ -15,10 +17,91 @@
     transition: .4s all;
 }
 
+.section-contacto .contacto {
+    width: 100%;
+    max-width: 860px;
+}
+
+.contacto h3 {
+    font-family: var(--titulo);
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+    width: 100%;
+}
+
+.contacto .col input, .contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff328e;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
 @media(min-width: 768px) {
     .section-contacto {
         
         width: calc(100% - 120px);
 
     }
+
+    .contacto h3 {
+        font-size: 32px;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .contacto h3 {
+        font-family: var(--titulo);
+        font-size: 48px;
+        padding: 20px 0;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+
+    .contacto .col input, .contacto .col textarea {
+        width: 600px;
+        padding: 12px;
+    }
+  
 }

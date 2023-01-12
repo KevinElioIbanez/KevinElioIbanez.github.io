@@ -364,7 +364,25 @@
         <!-- SECCIÓN CONTACTO -->
         <div class="contacto-container">
             <section class="section-contacto section" id="contacto">
-                <h3>Contacto</h3>
+                <div class="contacto">
+                    <h3>Contacto</h3>
+                    <div class="fila">
+                        <!-- Formulario -->
+                        <form class="col" action="https://formsubmit.co/kevinelioibanez@gmail.com" method="POST">
+                            <input name="name" type="text" placeholder="Nombre" required>
+                            <input name="email" type="email" placeholder="Correo" required>
+                            <input name="asunto" type="text" placeholder="Asunto" required>
+                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            <button type="submit">
+                                Enviar<i class='bx bxs-paper-plane'></i>
+                                <span class="overlay"></span>
+                            </button>
+
+                            <input type="hidden" name="_next" value="https://kevinelioibanez.github.io/">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
+                    </div>
+                </div>
             </section>
         </div>
     </main>

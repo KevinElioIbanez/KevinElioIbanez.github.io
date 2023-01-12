@@ -67,7 +67,6 @@ enlaces.forEach(enlace => enlace.addEventListener('click', handleClick));
 /* Efecto de aparicion de elementos */
 
 const hiddenElement = document.querySelectorAll(".hidden");
-const hiddenLateralRight = document.querySelectorAll(".hiddenLateralRight");
 const hiddenLateralLeft = document.querySelectorAll(".hiddenLateralLeft");
 
 const sectionShow = new IntersectionObserver(vista => {
@@ -92,21 +91,8 @@ const sectionLeft = new IntersectionObserver(vista => {
     })
 })
 
-const sectionRight = new IntersectionObserver(vista => {
-    vista.forEach(item => {
-        console.log(item);
-        if (item.isIntersecting) {
-            item.target.classList.add("show")
-        } else {
-            item.target.classList.remove("show")
-        }
-    })
-})
-
-
 hiddenElement.forEach((e) => sectionShow.observe(e))
 hiddenLateralLeft.forEach((e) => sectionLeft.observe(e))
-hiddenLateralRight.forEach((e) => sectionRight.observe(e))
 
 /* Cambio de ancho cuando el sidebar se agranda */
 
@@ -114,11 +100,12 @@ const aboutMi = document.querySelector(".about__mi h3"),
       aboutMiP = document.querySelector(".about__mi p"),
       aboutMih4 = document.querySelectorAll(".about__details h4"),
       aboutMiUl = document.querySelector(".datos-intereses ul"),
-      aboutMiLi = document.querySelectorAll(".datos-intereses ul li")
+      aboutMiLi = document.querySelectorAll(".datos-intereses ul li"),
+      portfolioAltura = document.querySelector(".portfolio-container")
 
 const observer = new ResizeObserver(() => {
 
-    if (sidebar.offsetWidth <= 360 && sidebar.offsetWidth > 120 && window.innerWidth >= 768 && window.innerWidth < 900) {
+    if (sidebar.offsetWidth <= 360 && sidebar.offsetWidth > 120 && window.innerWidth >= 768 && window.innerWidth < 900 || window.innerWidth >= 1024) {
 
         aboutMi.classList.add("titulo")
         aboutMiP.classList.add("parrafo")
@@ -129,6 +116,7 @@ const observer = new ResizeObserver(() => {
         aboutMiLi.forEach(li => {
             li.classList.add("interes")
         })
+        portfolioAltura.classList.add("portfolio-altura")
 
     } else {
 
@@ -141,8 +129,11 @@ const observer = new ResizeObserver(() => {
         aboutMiLi.forEach(li => {
             li.classList.remove("interes")
         })
+        portfolioAltura.classList.remove("portfolio-altura")
 
     }
+
+    /* if() */
 
 });
 

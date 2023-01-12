@@ -116,3 +116,7 @@ body {
     padding: 6px 8px !important;
     width: 60% !important;
 }
+
+.portfolio-altura {
+    height: 100% !important;
+}
