@@ -131,7 +131,7 @@ const observer = new ResizeObserver(() => {
 
     }
 
-    if (sidebar.offsetWidth <= 360 && sidebar.offsetWidth > 120 && window.innerWidth >= 768 && window.innerWidth < 900 || window.innerWidth >= 1024) {
+    if ((sidebar.offsetWidth <= 360 && sidebar.offsetWidth > 120) && (window.innerWidth >= 768 && window.innerWidth <= 1056)) {
 
         portfolioAltura.classList.add("portfolio-altura")
 
